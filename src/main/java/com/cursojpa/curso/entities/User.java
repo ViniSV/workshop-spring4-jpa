@@ -66,11 +66,11 @@ public class User implements Serializable{
 		this.email = email;
 	}
 
-	public String getTeleone() {
+	public String getTelefone() {
 		return teleone;
 	}
 
-	public void setTeleone(String teleone) {
+	public void setTelefone(String teleone) {
 		this.teleone = teleone;
 	}
 

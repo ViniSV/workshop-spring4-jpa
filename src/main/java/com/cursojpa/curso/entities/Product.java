@@ -25,7 +25,7 @@ public class Product implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String name;
+	private String nome;
 	private String description;
 	private Double price;
 	private String imgUrl;
@@ -44,10 +44,10 @@ public class Product implements Serializable{
 		
 	}
 
-	public Product(Integer id, String name, String description, double price, String imgUrl) {
+	public Product(Integer id, String nome, String description, double price, String imgUrl) {
 		super();
 		this.id = id;
-		this.name = name;
+		this.nome = nome;
 		this.description = description;
 		this.price = price;
 		this.imgUrl = imgUrl;
@@ -61,12 +61,12 @@ public class Product implements Serializable{
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getDescription() {
